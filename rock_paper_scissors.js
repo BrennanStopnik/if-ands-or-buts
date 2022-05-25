@@ -14,11 +14,11 @@ let p1 = prompt("Player 1, enter 'rock', 'paper' or 'scissors': ");
 let p2 = prompt("Player 1, enter 'rock', 'paper' or 'scissors': ");
 
 
-if ((p1 === 'rock' && p2 === 'scissors') || p1 === 'scissors' && p2 === 'paper' || p1 === 'paper' && p2 === 'rock'){
+if ((p1 === 'rock' && p2 === 'scissors') || (p1 === 'scissors' && p2 === 'paper') || (p1 === 'paper' && p2 === 'rock')){
     console.log("Player 1 wins!");
 } else if ((p2 === 'rock' && p1 === 'scissors') || (p2 === 'scissors' && p1 === 'paper') || (p2 === 'paper' && p1 === 'rock')){
     console.log("Player 2 wins!");
-} else if ((p1 === 'rock' && p2 === 'rock') || p1 === 'paper' && p2 === 'paper' || p1 === 'scissors' && p2 === 'scissors'){
+} else if ((p1 === 'rock' && p2 === 'rock') || (p1 === 'paper' && p2 === 'paper') || (p1 === 'scissors' && p2 === 'scissors')){
     console.log("Draw!");
 }else{
     console.log("You blew it again!")
