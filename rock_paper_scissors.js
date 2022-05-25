@@ -10,15 +10,20 @@ For those who are unfamiliar, rock beats scissors, scissors beats paper, and pap
 
 const prompt = require("prompt-sync")({sigint: true});
 
-let p1 = prompt("Player 1, enter 'rock', 'paper' or 'scissors': ");
-let p2 = prompt("Player 1, enter 'rock', 'paper' or 'scissors': ");
+let p1p = prompt("Player 1, enter 'rock', 'paper' or 'scissors': ");
+let p2p = prompt("Player 1, enter 'rock', 'paper' or 'scissors': ");
+let p1 = p1p.toLowerCase()
+let p2 = p2p.toLowerCase()
 
+let r = 'rock'
+let p = 'paper'
+let s = 'scissors'
 
-if ((p1 === 'rock' && p2 === 'scissors') || (p1 === 'scissors' && p2 === 'paper') || (p1 === 'paper' && p2 === 'rock')){
+if ((p1 === r && p2 === s) || (p1 === s && p2 === p) || (p1 === p && p2 === r)){
     console.log("Player 1 wins!");
-} else if ((p2 === 'rock' && p1 === 'scissors') || (p2 === 'scissors' && p1 === 'paper') || (p2 === 'paper' && p1 === 'rock')){
+} else if ((p2 === r && p1 === s) || (p2 === s && p1 === p) || (p2 === p && p1 === r)){
     console.log("Player 2 wins!");
-} else if ((p1 === 'rock' && p2 === 'rock') || (p1 === 'paper' && p2 === 'paper') || (p1 === 'scissors' && p2 === 'scissors')){
+} else if ((p1 === r && p2 === r) || (p1 === p && p2 === p) || (p1 === s && p2 === s)){
     console.log("Draw!");
 } else{
     console.log("You blew it again!")
