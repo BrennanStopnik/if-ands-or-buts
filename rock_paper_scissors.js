@@ -20,6 +20,6 @@ if ((p1 === 'rock' && p2 === 'scissors') || (p1 === 'scissors' && p2 === 'paper'
     console.log("Player 2 wins!");
 } else if ((p1 === 'rock' && p2 === 'rock') || (p1 === 'paper' && p2 === 'paper') || (p1 === 'scissors' && p2 === 'scissors')){
     console.log("Draw!");
-}else{
+} else{
     console.log("You blew it again!")
 }
