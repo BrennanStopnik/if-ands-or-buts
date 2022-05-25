@@ -11,7 +11,7 @@ Note: In this assignment, the node_modules folder containing the prompt-sync dep
 const prompt = require("prompt-sync")({sigint: true});
 
 let pass_prompt = Number(prompt("Please enter your passcode: "))
-let pass_code = 1134;
+let pass_code = 9029;
 
 if (pass_prompt === pass_code){
     console.log("Success!");
